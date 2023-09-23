@@ -6,7 +6,7 @@ COPY docker-entrypoint.sh /opt/app/docker-entrypoint.sh
 RUN chmod 764 /opt/app/docker-entrypoint.sh
 RUN chmod -R 764 /opt/app/libs
 RUN ls -la /opt/app/libs
-EXPOSE 8585
+EXPOSE 8080
 
 #CMD ["java", "-jar", "/opt/app/springboot-0.0.1-SNAPSHOT-plain.jar"]
 ENTRYPOINT ["sh", "/opt/app/docker-entrypoint.sh"]
